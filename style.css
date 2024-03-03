@@ -1004,3 +1004,7 @@ a {
 .opasity-none{
   display: none;
 }
+.mobnev{
+  background-color: #000;
+  background: linear-gradient(to right #D1913C,#FFD194);
+}
