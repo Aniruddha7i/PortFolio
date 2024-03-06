@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
   <title>PortFolio</title>
   <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
 </head>
@@ -80,14 +81,14 @@
     <div class="home-hero__content">
       <div class="home-hero__info">
         <h1 class="heading-primary home-hero__heading-primary">
-          <span class="heading-primary__sm"> Hello 👋</span>
-          <span class="heading-primary__main">
+          <span class="heading-primary__sm" style="color: white; font-weight:bold;"> Hello 👋</span>
+          <span class="heading-primary__main" style="color: white; font-weight:bold;">
             I'm Aniruddha Chandra! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
-        <button class="btn btn-inv home-hero__btn-theme">Download CV</button>
-        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        <button class="btn btn-theme home-hero__btn-theme tc dib  grow shadow-5"><a  href="./index.html#projects" > Projects </a></button>
+        <button class="btn btn-inv home-hero__btn-theme tc dib  grow shadow-5"><a  href="https://drive.google.com/file/d/11MsJduPMHoKgXDWPX2QZ5jRu1z4UmRvr/view?usp=drive_link" target="_blank">Download CV</a></button>
+        <button class="btn btn-inv home-hero__btn-theme tc dib  grow shadow-5" onclick="con_f()">Contact</button>
       </div>
     </div>
   </section>
@@ -108,14 +109,19 @@
             </h3>
             <p class="text-primary about__text-primary">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+               I was born at Amta in Howrah in West Bengal in India. I passout class 10th from B.R.A United High School and passout class 12th form J.P.V High School. I done 18441 rank in Jee Main in 2022.  Currently I am in IIEST Shibpur 2nd year in Department of Electronics and Telecommunication Engineering. <br>
+
+               Dedicated and enthusiastic individual 
+               with a diligent work ethic, exceptional 
+               organizational prowess and a fervent 
+               drive, actively seeking to secure an 
+               entry-level role as an analyst or 
+               consultant. Eager to contribute to 
+               team success and assist in attaining 
+               collective objectives.
               </span>
             </p>
-            <button class="btn btn-theme about__btn-theme">Projects</button>
+            <button class="btn btn-theme about__btn-theme"><a href="./index.html#projects" > Projects </a></button>
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -199,30 +205,28 @@
 
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/gifface.gif" alt="Project Image" class="projects__list-item-imgtc dib  grow shadow-5" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Face Detection Model
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Using React and ML I made the website.
+                  It can detect Human faces.
                 </span>
                 <!-- <br />
                   <br /> -->
               </p>
               <a href="#">
-                <button class="btn btn-theme projects__btn-theme">
+                <button class="btn btn-theme projects__btn-theme tc dib  grow shadow-5">
                   Live Link
                 </button>
               </a>
               <a href="#">
-                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+                <button class="btn btn-inv projects__btn-inv tc dib  grow shadow-5">Code Link</button>
               </a>
             </div>
           </div>
@@ -230,10 +234,10 @@
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/gifPro.gif" alt="Project Image" class="projects__list-item-imgtc dib  grow shadow-5" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Being ETC
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
 
@@ -252,12 +256,12 @@
                 </span>
               </p>
               <a href="#">
-                <button class="btn btn-theme projects__btn-theme">
+                <button class="btn btn-theme projects__btn-theme tc dib  grow shadow-5">
                   Live Link
                 </button>
               </a>
               <a href="#">
-                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+                <button class="btn btn-inv projects__btn-inv tc dib  grow shadow-5">Code Link</button>
               </a>
             </div>
             <!-- <div class="projects__list-item-count">
@@ -274,41 +278,38 @@
             </div>
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/gifrobo.gif" alt="Project Image" class="projects__list-item-imgtc dib  grow shadow-5" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Fobo Friends
               </h3>
               <!-- <hr class="projects__title-text-divider" /> -->
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                 It can search robots name and email. Just write the name of robot. Search bar based project using react
                 </span>
                 <!-- <br />
                   <br /> -->
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  <!-- sapiente aut corporis odio repellendus? Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit -->
                 </span>
               </p>
               <a href="./index.html#about">
-                <button class="btn btn-theme projects__btn-theme">
+                <button class="btn btn-theme projects__btn-theme tc dib  grow shadow-5">
                   Live Link
                 </button>
               </a>
               <a href="#">
-                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+                <button class="btn btn-inv projects__btn-inv tc dib  grow shadow-5">Code Link</button>
               </a>
             </div>
           </div>
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-imgtc dib  grow shadow-5" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
                 Project Name
@@ -330,12 +331,12 @@
                 </span>
               </p>
               <a href="#">
-                <button class="btn btn-theme projects__btn-theme">
+                <button class="btn btn-theme projects__btn-theme tc dib  grow shadow-5">
                   Live Link
                 </button>
               </a>
               <a href="#">
-                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+                <button class="btn btn-inv projects__btn-inv tc dib  grow shadow-5">Code Link</button>
               </a>
             </div>
             <div class="projects__list-item-count">
