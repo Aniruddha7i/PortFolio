@@ -178,6 +178,5 @@ function con_f(){
       body.style.background='linear-gradient(to right, #00C9FF,#92FE9D)';
     }
     
- console.log(4);
 }
 // console.log(Section_contact.classList[0])
