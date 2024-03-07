@@ -81,7 +81,7 @@ smMenuCloseBtn.addEventListener('click', () => {
 
 
 
-// ---
+// color change
 const themeColorSelector = document.querySelector('.themeClrSelector')
 const themeColorSelectorInput = document.querySelector(
   '.themeClrSelector__input'
