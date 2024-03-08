@@ -5,9 +5,10 @@
   font-family: inherit;
 }
 
+/* use those color in many places  */
 :root {
   --themeColor: 29, 161, 242;
-  /* Theme Color in (R,G,B) format */
+  --themeColor2: 255,79,44;
 }
 
 html {
@@ -15,33 +16,25 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 75em === 1200px */
+
 @media (max-width: 75em) {
   html {
     font-size: 60%;
   }
 }
 
-/* 56.25em === 900px */
 @media (max-width: 56.25em) {
   html {
     font-size: 58%;
   }
 }
 
-/* 37.5em === 600px */
 @media (max-width: 37.5em) {
   html {
     font-size: 56%;
   }
 }
 
-/* 112.5em === 1600px */
-/* @media (min-width: 112.5em) {
-  html {
-    font-size: 65%;
-  }
-} */
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -57,7 +50,6 @@ a {
   color: inherit;
 }
 
-/* Utils */
 
 .btn {
   font-family: inherit;
@@ -69,7 +61,7 @@ a {
   padding: 1.8rem 4rem;
   font-size: 1.8rem;
   border-radius: 5px;
-  border: 2px solid rgba(var(--themeColor), 1);
+  border: 2px solid rgba(var(--themeColor2), 1);
 }
 
 @media (max-width: 37.5em) {
@@ -194,8 +186,6 @@ a {
   margin-bottom: 0;
 }
 
-/* Animation ( Keyframes ) */
-
 @keyframes downToUp {
   0% {
     opacity: 0;
@@ -208,7 +198,7 @@ a {
   }
 }
 
-/* Main Header Stylings */
+/* Main Header */
 
 .main-header {
   display: flex;
@@ -282,6 +272,12 @@ a {
   right: 2.5rem;
   width: 3rem;
   height: 3rem;
+}
+
+
+.mobnev{
+  background-color: #4bfffc;
+  background: linear-gradient(to right #D1913C,#FFD194);
 }
 
 .main-header__sm-menu-close:before,
@@ -374,9 +370,7 @@ a {
   color: #000;
   font-weight: 400;
 }
-/* .main-header__navigation{
-  background: linear-gradient(to right, red,yellow);
-} */
+
 .main-header__navigation-links {
   display: flex;
   align-items: center;
@@ -388,7 +382,6 @@ a {
   letter-spacing: 1px;
   color: #000;
   font-weight: 400;
-  /* box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15); */
 }
 .main-header__navigation-link:hover{
   box-shadow: 20px 10px 20px 0 rgba(0, 0, 0, 0.15);
@@ -405,7 +398,7 @@ a {
   }
 }
 
-/* Hero Section Stylings */
+/* Home Section */
 
 .home-hero {
   display: flex;
@@ -544,7 +537,7 @@ a {
   }
 }
 
-/* About */
+/* About Section */
 .about {
   background: linear-gradient(to right,#e0eafc,#cfdef3);
 }
@@ -604,7 +597,7 @@ a {
   font-weight: bold;
 }
 
-/* Skills Showcase */
+/* Skills  */
 
 .skills-showcase {
   background: linear-gradient(to right,#ffb75e,#ed8f03);
@@ -674,7 +667,7 @@ a {
   }
 }
 
-/* projects */
+/* projects Section */
 
 .projects__list-item {
   display: grid;
@@ -682,34 +675,23 @@ a {
   grid-gap: 4rem;
   margin-bottom: 8rem;
 }
-/* .projects::before{
-  position: absolute;
-  content: "";
-  background: url(https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?b=1&s=612x612&w=0&k=20&c=-wlvWS-XTNTxhD6_ewD5T8vRsiTrvnId8b7uf-5-Ucw=) no-repeat center center/cover;
-  height: 250rem;
-  width: 100vw;
-  z-index: -1;
-  opacity: .7;
-  left: 0px;
-  right: 0px;
-  top: 200rem;
-}
-.projects__list-item-img-cont::before{
-  position: absolute;
-  content: "";
-  background: url(https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?b=1&s=612x612&w=0&k=20&c=-wlvWS-XTNTxhD6_ewD5T8vRsiTrvnId8b7uf-5-Ucw=) no-repeat center center/cover;
-  height: 250rem;
-  width: 100vw;
-  z-index: -1;
-  opacity: .7;
-  left: 0px;
-  right: 0px;
-  top: 200rem;
-} */
 
 .projects__list-item--inv {
   justify-content: flex-end;
 }
+
+/* .projects::before{
+  position: absolute;
+    content: "";
+    background: url(./assets/images.jpeg) center center/cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
+    opacity: 1;
+    left: 0px;
+    right: 0px;
+
+} */
 
 @media (max-width: 75em) {
   .projects__list-item {
@@ -776,7 +758,10 @@ a {
   width: 100%;
   display: block;
 }
-
+.projects__list-item-imgtc{
+  width: 100%;
+  display: block;
+}
 .projects__list-item-heading-tertiary {
   margin: 5rem 0 3rem 0;
 }
@@ -829,7 +814,7 @@ a {
   }
 }
 
-/* Contact */
+/* Contact Section */
 
 .contact-display-none{
   display: none;
@@ -898,12 +883,6 @@ a {
   letter-spacing: 1px;
 }
 
-/* Code for Modern Browsers */
-/* Code for WebKit, Blink, Edge */
-/* Code for Internet Explorer 10-11 */
-/* Code for Microsoft Edge */
-/* Code for Mozilla Firefox 4 to 18 */
-/* Code for Mozilla Firefox 19+ */
 
 
 .contact__form-field-input::placeholder {
@@ -965,7 +944,7 @@ a {
 }
 
 .contact__form-visual {
-  background-image: url('https://i.postimg.cc/mrHQw69n/contact-form-bg.jpg');
+  background-image: url('https://images.pexels.com/photos/3844790/pexels-photo-3844790.jpeg?auto=compress&cs=tinysrgb&w=600');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -990,7 +969,15 @@ a {
   left: 0;
 }
 
-/* Main Footer */
+/* spatial effect for contact page  */
+.opasity{
+  opacity: 0.2;
+}
+.opasity-none{
+  display: none;
+}
+
+/* Main Footer Section */
 
 .main-footer__upper {
   background: #000;
@@ -1109,13 +1096,4 @@ a {
   left: 0;
   z-index: 1;
 }
-.opasity{
-  opacity: 0.2;
-}
-.opasity-none{
-  display: none;
-}
-.mobnev{
-  background-color: #4bfffc;
-  background: linear-gradient(to right #D1913C,#FFD194);
-}
+
