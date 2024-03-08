@@ -749,17 +749,17 @@ a {
   margin: 0 0 0 auto;
 }
 
-.projects__list-item-img-cont {
+/* .projects__list-item-img-cont {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+} */
 
 .projects__list-item-img {
   width: 100%;
   display: block;
 }
 .projects__list-item-imgtc{
-  width: 100%;
+  min-width: 100%;
   display: block;
 }
 .projects__list-item-heading-tertiary {
